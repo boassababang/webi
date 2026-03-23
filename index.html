@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="site-title">Bakugou Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-wrapper" id="app">
+        <!-- Audio Element (Night Dancer - imase) -->
+        <audio id="bg-music" loop>
+            <source src="mu.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Fire Particle Canvas -->
+        <canvas id="fire-canvas"></canvas>
+
+        <!-- Background Large Text -->
+        <h1 class="bg-text" id="bg-name">BAKUGOU</h1>
+
+        <!-- Header: Menu Icon & Status -->
+        <header>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="status-indicator">
+                <span id="page-num">05</span>
+                <div class="line"></div>
+            </div>
+        </header>
+
+        <!-- Main Character Area (Home Page) -->
+        <main class="character-container active" id="home-section">
+            <img id="char-img" src="https://www.pngmart.com/files/13/Katsuki-Bakugo-PNG-Transparent-Image.png" alt="Character">
+        </main>
+
+        <!-- Pages (Hidden by Default) -->
+        <section class="page-content" id="about-section">
+            <div class="content-box">
+                <h2>About Me</h2>
+                <p>Halo! Saya Boas, seorang penggemar anime dan pengembang web. Website ini dirancang untuk menunjukkan dedikasi dan semangat saya dalam membangun pengalaman digital yang unik.</p>
+            </div>
+        </section>
+
+        <section class="page-content" id="contact-section">
+            <div class="content-box">
+                <h2>Contact</h2>
+                <p>Hubungi saya untuk kolaborasi atau sekadar menyapa!</p>
+                <div class="contact-links">
+                    <p>Email: boas@example.com</p>
+                    <p>Instagram: @boas_dev</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-content" id="gallery-section">
+            <div class="content-box">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"></div>
+                    <div class="gallery-item"></div>
+                    <div class="gallery-item"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer: Nav Menu & Scroll Hint -->
+        <footer>
+            <nav class="side-menu">
+                <ul id="menu-list">
+                    <!-- Injected via script.js -->
+                </ul>
+            </nav>
+            <div class="scroll-hint">
+                <span>Scroll Down</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

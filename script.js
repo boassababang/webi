@@ -16,7 +16,7 @@ const PAGE_DATA = {
     ],
     settings: {
         scrollText: "Scroll Down",
-        siteTitle: "Bakugou | My Hero Academia"
+        siteTitle: "Boas Sababang"
     }
 };
 
